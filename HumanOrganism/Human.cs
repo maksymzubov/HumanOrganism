@@ -6,5 +6,11 @@ namespace HumanOrganism
 {
     public class Human
     {
+        public Sex Sex { get; }
+
+        public Human(Sex sex)
+        {
+            Sex = sex;
+        }
     }
 }
