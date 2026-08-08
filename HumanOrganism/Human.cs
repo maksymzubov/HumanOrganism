@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using HumanOrganism.Anatomy;
 
 namespace HumanOrganism
 {
@@ -8,11 +9,13 @@ namespace HumanOrganism
     {
         public Sex Sex { get; }
         public DateOnly DateOfBirth { get; }
+        public Sceleton Sceleton { get; }
 
         public Human(Sex sex, DateOnly dateOfBirth)
         {
             Sex = sex;
             DateOfBirth = dateOfBirth;
+            Sceleton = new Sceleton();
         }
     }
 }
