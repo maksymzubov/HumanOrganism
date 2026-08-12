@@ -8,6 +8,17 @@ namespace HumanOrganism.Anatomy
     public class Skeleton
     {
         public IReadOnlyCollection<Bone> Bones { get; }
+        public Bone? GetBone(BoneIdentity identity)
+        {
+            foreach (var bone in Bones)
+            {
+                if (bone.Identity.Equals(identity))
+                {
+                    return bone;
+                }
+            }
+            return null;
+        }
 
         public Skeleton()
         {

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HumanOrganism.Anatomy.Bones
 {
-    public class BoneIdentity
+    public record BoneIdentity
     {
         public BoneType Type { get; }
         public BodySide? Side { get; }
