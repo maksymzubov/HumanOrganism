@@ -4,13 +4,11 @@ namespace HumanOrganism.Anatomy.Bones
 {
     public class Bone
     {
-        public BoneType Type { get; }
-        public BodySide? Side { get; }
+        public BoneIdentity Identity { get; }
 
-        public Bone(BoneType type, BodySide? side = null)
+        public Bone(BoneIdentity identity)
         {
-            Type = type;
-            Side = side;
+            Identity = identity;
         }
     }
 }

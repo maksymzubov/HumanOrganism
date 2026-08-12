@@ -6,5 +6,5 @@ Console.WriteLine(human.Sex); // Output: Male
 Console.WriteLine(human.DateOfBirth); // Output: 5/8/1999
 foreach (var bone in human.Sceleton.Bones)
 {
-    Console.WriteLine($"{bone.Type} - {bone.Side}");
+    Console.WriteLine(bone.Identity.GetType().Name);
 }

@@ -5,17 +5,17 @@ using HumanOrganism.Anatomy.Bones;
 
 namespace HumanOrganism.Anatomy
 {
-    public class Sceleton
+    public class Skeleton
     {
         public IReadOnlyCollection<Bone> Bones { get; }
 
-        public Sceleton()
+        public Skeleton()
         {
             Bones = new List<Bone>()
             {
-                new Bone (BoneType.Femur, BodySide.Left),
-                new Bone (BoneType.Femur, BodySide.Right),
-                new Bone (BoneType.Sternum)
+                new Bone (new BoneIdentity(BoneType.Femur, BodySide.Left)),
+                new Bone (new BoneIdentity(BoneType.Femur, BodySide.Right)),
+                new Bone (new BoneIdentity(BoneType.Sternum))
             };
         }
 

@@ -9,13 +9,13 @@ namespace HumanOrganism
     {
         public Sex Sex { get; }
         public DateOnly DateOfBirth { get; }
-        public Sceleton Sceleton { get; }
+        public Skeleton Sceleton { get; }
 
         public Human(Sex sex, DateOnly dateOfBirth)
         {
             Sex = sex;
             DateOfBirth = dateOfBirth;
-            Sceleton = new Sceleton();
+            Sceleton = new Skeleton();
         }
     }
 }
